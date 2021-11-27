@@ -87,16 +87,17 @@ header nav ul li a {
 }
 /* Hero Style End */
 
-
 .sections {
     display: flex;
-    align-content: space-between;
-    flex-direction: row;
-    padding-bottom: 20px;
-    margin: 20px 20px 20px 120px;
+    justify-content: space-between;
+    padding-bottom: 50px;
+    margin: 50px auto;
+    align-items: center;
+    width: 80%;
+
 }
 
-.section-title {
+.sections h3 {
     padding-right: 15px;
 }
 
@@ -115,8 +116,13 @@ header nav ul li a {
     flex-wrap: wrap;
 }
 
-.work-img img{
-    height: 200px;
+.work-img-big img {
+    height: 300px;
+    width: 100%;
+}
+
+.work-img-small img {
+    height: 100px;
     width: 100%;
 }
 
