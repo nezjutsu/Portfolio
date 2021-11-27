@@ -16,24 +16,25 @@ body {
     color: var(--green);
 }
 
+/* Header Style Begin */
 header {
     background-color: var(--grey);
     display: flex;
     justify-content: space-between;
     flex-wrap: flex;
-    position: -webkit-sticky;
-    position: sticky;
+    position: relative;
     top: 0;
     padding: 10px 15px;
 }
 
 header h1 {
     font-weight: bold;
-    font-size: 36px;
+    font-size: 42px;
     text-decoration: none;
     margin: 10px;
     color: var(--grey);
     background-color: var(--green);
+    
 }
 
 header a {
@@ -59,7 +60,9 @@ header nav ul li a {
     font-size: 1.55vw;
     margin: 5px;
 }
+/* Header Style End */
 
+/* Hero Style Start */
 .hero {
     display: flex;
     background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/header.bg.jpg");
@@ -82,8 +85,10 @@ header nav ul li a {
     background-color: var(--green);
     padding: 2px 5px;
 }
+/* Hero Style End */
 
-.intro {
+
+.sections {
     display: flex;
     align-content: space-between;
     flex-direction: row;
@@ -91,17 +96,20 @@ header nav ul li a {
     margin: 20px 20px 20px 120px;
 }
 
-.about-info h2 {
-    padding: 0 10px 0 0;
+.section-title {
+    padding-right: 15px;
 }
 
+/* About Me style Start */
 .intro-info {
     line-height: 1.3;
     font-size: 18px;
     border-left: 5px solid var(--green);
     padding: 0 80px 0 15px;
 }
+/* About Me Style End */
 
+/* Work Style Start */
 .work {
     display: flex;
     flex-wrap: wrap;
@@ -112,6 +120,7 @@ header nav ul li a {
     width: 100%;
 }
 
+/* Utilites */
 .underline {
     border-bottom: 4px solid var(--green);
 }
