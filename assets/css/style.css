@@ -97,8 +97,9 @@ header nav ul li a {
 
 }
 
-.sections h3 {
+.sections h2 {
     padding-right: 15px;
+    align-self: flex-start;
 }
 
 /* About Me style Start */
@@ -116,13 +117,29 @@ header nav ul li a {
     flex-wrap: wrap;
 }
 
-.work-img-big img {
-    height: 300px;
+.work-info {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: space-evenly;
+    border-left: 5px solid;
+}
+
+.work-img {
+    margin: 20px 30px auto;
+}
+
+.work-img-main {
+
+}
+
+.work-img-main img {
+    height: 350px;
     width: 100%;
 }
 
-.work-img-small img {
-    height: 100px;
+.work-img img {
+    height: 250px;
     width: 100%;
 }
 
