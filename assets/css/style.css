@@ -21,20 +21,20 @@ header {
     background-color: var(--grey);
     display: flex;
     justify-content: space-between;
-    flex-wrap: flex;
+    flex-wrap: wrap;
     position: relative;
     top: 0;
     padding: 10px 15px;
+    align-items: center;
 }
 
 header h1 {
     font-weight: bold;
-    font-size: 42px;
+    font-size: 50px;
     text-decoration: none;
     margin: 10px;
     color: var(--grey);
     background-color: var(--green);
-    
 }
 
 header a {
@@ -57,8 +57,14 @@ header nav ul {
 header nav ul li a {
     padding: 5px 15px;
     font-weight: lighter;
-    font-size: 1.55vw;
+    font-size: 30px;
     margin: 5px;
+    text-shadow: 2px 2px 4px var(--grey);
+}
+
+header nav ul li a:hover {
+    background-image: linear-gradient(to bottom right, var(--white), var(--grey));
+    border-radius: 10px;
 }
 /* Header Style End */
 
@@ -66,7 +72,7 @@ header nav ul li a {
 .hero {
     display: flex;
     background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/header.bg.jpg");
-    height: 240px;
+    height: 300px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -75,39 +81,38 @@ header nav ul li a {
 
 
 .hero-text {
-    font-size: 40px;
+    font-size: 60px;
     color: var(--grey);
     font-style: italic;
     font-weight: bold;
-    position: absolute;
-    top: 75%;
-    left: 80%;
-    background-color: var(--green);
-    padding: 2px 5px;
+    padding: 0 0 60px;
+    align-self: center;
+    margin: auto;
+    text-shadow: 2px 2px 10px #282828;
 }
 /* Hero Style End */
 
+
 .sections {
-    display: flex;
-    justify-content: space-between;
+    display: flex;         
+    justify-content: space-between; 
     padding-bottom: 50px;
     margin: 50px auto;
     align-items: center;
-    width: 80%;
-
+    width: 70%;
+    flex-direction: column;
 }
 
 .sections h2 {
-    padding-right: 15px;
-    align-self: flex-start;
+    font-size: 36px;
+    padding-bottom: 5px;
 }
 
 /* About Me style Start */
 .intro-info {
-    line-height: 1.3;
+    line-height: 1.4;
     font-size: 18px;
-    border-left: 5px solid var(--green);
-    padding: 0 80px 0 15px;
+    width: 80%;
 }
 /* About Me Style End */
 
@@ -122,25 +127,64 @@ header nav ul li a {
     flex-wrap: wrap;
     align-content: space-between;
     justify-content: space-evenly;
-    border-left: 5px solid;
 }
 
 .work-img {
     margin: 20px 30px auto;
+    position: relative;
 }
 
 .work-img-main {
+    position: relative;
+}
 
+.work-text {
+    position: absolute;
+    color: var(--green);
+    top: 85%;
+    left: 1%;
+    font-size: 28px;
+    background: var(--grey);
+    border-radius: 5px;
 }
 
 .work-img-main img {
     height: 350px;
     width: 100%;
+    opacity: 65%;
+    border-radius: 10px;
+}
+
+.work-img-main img:hover {
+    opacity: 100%;
 }
 
 .work-img img {
     height: 250px;
     width: 100%;
+    opacity: 65%;
+    border-radius: 10px;
+}
+
+.work-img img:hover {
+    opacity: 100%;
+}
+
+/* Work Style End */
+
+/* Contact Me Style Start */
+.contact-info {
+    width: 100%;
+    justify-content: space-evenly;
+    display: flex;
+}
+
+.contact-info a {
+    font-size: 28px;
+    padding-bottom: 3px;
+    text-decoration: none;
+    color: var(--green);
+    margin-bottom: 10px;
 }
 
 /* Utilites */
@@ -148,3 +192,46 @@ header nav ul li a {
     border-bottom: 4px solid var(--green);
 }
 
+.border {
+    border: 3px solid var(--green);
+}
+
+/* @media (max-width: 12450px) { ... } */
+@media (max-width: 1100px) {
+    header {
+        flex-direction: column;
+    }
+
+    header h1 {
+       font-size: 4vw;
+}
+
+.hero-text {
+    font-size: 6vw;
+}
+
+.work-img-main img {
+    width: 100%;
+    image-rendering: optimizeQuality;
+}
+
+.sections {
+    width: 90%
+}
+
+.contact-info {
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav ul li a {
+    font-size: 2.5vw;
+}
+
+}
+
+@media (max-width: 780px) {
+    header h1 {
+        font-size: 7vw;
+    }
+}
