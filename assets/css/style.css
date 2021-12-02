@@ -187,6 +187,11 @@ header nav ul li a:hover {
     margin-bottom: 10px;
 }
 
+.contact-info a:hover {
+    background-image: linear-gradient(to bottom right, var(--white), var(--grey));
+    border-radius: 10px;
+}
+
 /* Utilites */
 .underline {
     border-bottom: 4px solid var(--green);
