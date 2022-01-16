@@ -25,7 +25,7 @@ A website that offers potential employers a way to know who I am, what I special
 
 ## Website
 
-https://nezjutsu.github.io/Portfolio/
+https://seankral.github.io/Portfolio/
 
 
 
